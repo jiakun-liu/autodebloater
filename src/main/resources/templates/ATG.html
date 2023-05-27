@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TinyApp</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .imgbox {
+            display: grid;
+            height: 100%;
+        }
+        .center-fit {
+            max-width: 100%;
+            /*max-height: 100vh;*/
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="detail-box">
+                            <div>
+                                <h1>
+                                    AutoDebloater: Automated Android App Debloating
+                                </h1>
+                                <img class="center-fit" th:src="${imagePath}" alt="ATG">
+                                <fieldset>
+                                    <legend>Choose the activities you don't want:</legend>
+                                    <form th:action="@{/ATG/selectActivity}" id="grid" name="grid">
+                                        <table>
+                                            <tr>
+                                                <dev th:each="item : ${activityNames}">
+                                                    <div>
+                                                        <input type="checkbox" name="activity" th:value="${item}">
+                                                       <span th:text="${item}"></span>
+                                                    </div>
+                                                </dev>
+                                            </tr>
+                                            <hr>
+                                        </table>
+                                        <tr>
+                                            <td><input type="submit" value="submit" /></td>
+                                        </tr>
+                                    </form>
+                                </fieldset>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

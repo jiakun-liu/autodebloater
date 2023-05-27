@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head> 
+    <title>TinyApp</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item">
+                <div class="row">
+                    <div class="col">
+                        <div class="detail-box">
+                            <div>
+                                <h1>
+                                    AutoDebloater: Automated Android App Debloating
+                                </h1>
+<!--                                <fieldset>-->
+<!--                                    <legend>Choose the applications you want to debloat:</legend>-->
+<!--                                    <form th:action="@{/ATG}" id="grid" name="grid">-->
+<!--                                        <table>-->
+<!--                                            <tr>-->
+<!--                                                <dev th:each="item : ${extractedApplications}">-->
+<!--                                                    <div>-->
+<!--                                                        <input type="radio" name="appName" th:value="${item}">-->
+<!--                                                        <span th:text="${item}"></span>-->
+<!--                                                    </div>-->
+<!--                                                </dev>-->
+<!--                                            </tr>-->
+<!--                                            <hr>-->
+<!--                                        </table>-->
+<!--                                        <tr>-->
+<!--                                            <td><input type="submit" value="submit" /></td>-->
+<!--                                        </tr>-->
+<!--                                    </form>-->
+<!--                                </fieldset>-->
+                                <h2>
+                                    Please submit the APK file you would like to debloat.
+                                </h2>
+                                <form th:action="@{/upload}" method="post" enctype="multipart/form-data">
+                                    <input type="file" name="file" multiple="multiple" /></td>
+                                    <input type="submit" value="Submit"/></td>
+<!--                                    <table>-->
+<!--                                        <tr>-->
+<!--                                            <td>-->
+<!--                                        </tr>-->
+<!--                                        <tr>-->
+<!--                                            <td>-->
+<!--                                        </tr>-->
+<!--                                         <hr>-->
+<!--                                     </table>-->
+                                </form>
+                                <p>
+                                    Please note that if this application has not been submitted by any user before, and we have not previously analyzed this APK, it may take approximately ten minutes to analyze the file. The analysis process will be conducted in the background. If, unfortunately, disconnect with the website, please revisit our homepage after approximately ten minutes and resubmit the APK file you would like to debloat. Once we have completed the analysis of the APK, we will immediately provide you with information regarding the internal features of the application.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

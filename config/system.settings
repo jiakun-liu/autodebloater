@@ -1,0 +1,8 @@
+androidHome=/home/jiakun/Android/
+baseDir=/home/jiakun/Projects/TinyAppAll/
+androidJar=/home/jiakun/Projects/TinyAppAll/Related/android-platforms/
+zipalign=/home/jiakun/Android/Sdk/build-tools/33.0.2/zipalign
+apksigner=/home/jiakun/Android/Sdk/build-tools/33.0.2/apksigner
+python=/home/jiakun/miniconda3/envs/py27/bin/python
+storydroid=/home/jiakun/Projects/TinyAppAll/Related/StoryDroid/
+aapt=/home/jiakun/Android/Sdk/build-tools/33.0.2/aapt
